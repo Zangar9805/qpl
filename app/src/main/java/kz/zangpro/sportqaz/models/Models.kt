@@ -8,7 +8,12 @@ data class NewsListModel(val title: String,
                          val views: Int,
                          val baseUrl: String = "alaman.kz")
 
-data class NewsModel(val img: String)
+data class FullNewsModel(val mainTitle: String,
+                         val title: String,
+                         val date: String,
+                         val imgUrl: String,
+                         val text: String,
+                         val sourceText: String)
 
 data class TablesModel(val clubRunk: Int,
                        val clubName: String,

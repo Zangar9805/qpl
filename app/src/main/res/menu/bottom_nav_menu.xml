@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+            android:id="@+id/newsMenu"
             android:icon="@drawable/ic_news_selector"
             android:title=""/>
 
     <item
+            android:id="@+id/matchesMenu"
             android:icon="@drawable/ic_matchs_selector"
             android:title=""/>
 
     <item
+            android:id="@+id/tableMenu"
             android:icon="@drawable/ic_table_selector"
             android:title=""/>
 
 
     <item
+            android:id="@+id/lidersMenu"
             android:icon="@drawable/ic_liders_selector"
             android:title=""/>
 
     <item
+            android:id="@+id/clubsMenu"
             android:icon="@drawable/ic_clubs_selector"
             android:title=""/>
 </menu>

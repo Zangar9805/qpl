@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+    >
+       <TextView
+               android:id="@+id/tableRunkText"
+               android:layout_width="0dp"
+               android:layout_height="30dp"
+               android:layout_weight="0.6"
+               android:text="1"
+               android:textSize="16sp"
+               android:textColor="@color/colorBlack"
+               android:textStyle="bold"
+               android:gravity="center"
+       />
+
+        <ImageView
+                android:id="@+id/tableImg"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"
+                android:padding="5dp"
+        />
+
+        <TextView
+                android:id="@+id/tableNameText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2.5"
+                android:text="Qairat"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="start|center_vertical"
+        />
+
+        <TextView
+                android:id="@+id/tableGamesText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="17"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:gravity="center"
+        />
+
+        <TextView
+                android:id="@+id/tableWinsText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="17"
+                android:textSize="16sp"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:gravity="center"
+        />
+
+        <TextView
+                android:id="@+id/tableDrawsText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:gravity="center"
+        />
+
+        <TextView
+                android:id="@+id/tableLostsText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:gravity="center"
+        />
+
+        <TextView
+                android:id="@+id/tableGoalsText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.5"
+                android:text="17-0"
+                android:textSize="16sp"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:gravity="center"
+        />
+
+        <TextView
+                android:id="@+id/tablePointsText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="51"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:gravity="center"
+        />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/colorDivider"
+          android:layout_marginStart="5dp"
+          android:layout_marginEnd="5dp"
+    />
+
+</LinearLayout>

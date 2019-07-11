@@ -1,6 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+        >
+            <TextView
+                    android:id="@+id/aboutNewsGeneralTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Бұл қалай болғаны"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+            />
 
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                    android:id="@+id/aboutNewsDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3 шілде 12:32"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+            />
+
+            <ImageView
+                    android:id="@+id/aboutNewsPoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+            />
+
+            <TextView
+                    android:id="@+id/aboutNewsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Исламбек Қуат Ресей біріншілігіне кетпекші ағайын!"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+            />
+
+            <TextView
+                    android:id="@+id/aboutNewsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Бла-бла-бла ол кетпейді."
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+            />
+
+            <TextView
+                    android:id="@+id/aboutNewsSource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Түп-нұсқа: prosports.kz"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

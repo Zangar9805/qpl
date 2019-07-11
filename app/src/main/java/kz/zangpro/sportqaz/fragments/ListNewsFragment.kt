@@ -8,23 +8,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kz.zangpro.sportqaz.presenters.Presenter
+import kz.zangpro.sportqaz.presenters.ListNewsListPresenter
 import kz.zangpro.sportqaz.R
 import kz.zangpro.sportqaz.adapters.NewsAdapter
 import kz.zangpro.sportqaz.models.NewsListModel
-import kz.zangpro.sportqaz.mvp.MainContract
+import kz.zangpro.sportqaz.mvp.MVP
 
-class ListNewsFragment : Fragment(), MainContract.NewsListView {
+class ListNewsFragment : Fragment(), MVP.NewsListView {
 
     lateinit var recyclerView: RecyclerView
     lateinit var adapter: NewsAdapter
-    val presenter = Presenter(this)
+    val presenter = ListNewsListPresenter(this)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.prev_news_fragment, container!!, false)
+        val view = inflater.inflate(R.layout.list_news_fragment, container!!, false)
 
         recyclerView = view.findViewById(R.id.recyclerNews)
         recyclerView.layoutManager = LinearLayoutManager(container.context)
@@ -37,8 +34,14 @@ class ListNewsFragment : Fragment(), MainContract.NewsListView {
 
     override fun showNewsList(list: MutableList<NewsListModel>) {
         adapter = NewsAdapter(list, context!!) {
-            Toast.makeText(context, it.siteUrl, Toast.LENGTH_SHORT).show()
+//            Toast.makeText(context, it.siteUrl, Toast.LENGTH_SHORT).show()
+            val aNewsFr = NewsFragment()
+            val bundle = Bundle()
+            bundle.putString("URL", it.siteUrl)
+            aNewsFr.arguments = bundle
+            fragmentManager!!.beginTransaction().replace(R.id.container, aNewsFr).addToBackStack(null).commit()
         }
+
         recyclerView.adapter = adapter
         adapter.notifyDataSetChanged()
     }

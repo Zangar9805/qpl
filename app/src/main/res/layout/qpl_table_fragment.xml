@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:id="@+id/defNames"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:id="@+id/linearLayout">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.6"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="2.5"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="start|center_vertical"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="O"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Ж"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Т"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="ЖЖ"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1.5"
+                    android:text="Д"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+            />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Ұ"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+            />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/colorDivider"
+              android:layout_marginStart="5dp"
+              android:layout_marginEnd="5dp"
+        />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerLeagTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+    />
+
+</LinearLayout>
